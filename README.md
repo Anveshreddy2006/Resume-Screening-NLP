@@ -1,131 +1,89 @@
-AI Resume Screening System (NLP + ML)
+AI Resume Screening System (NLP + Machine Learning)
 
-An intelligent AI-powered Resume Screening System that automatically analyzes uploaded resumes and predicts the most relevant technical job role using Machine Learning and Natural Language Processing.
+Recruiters in modern organizations receive thousands of resumes for every job opening. Manually reviewing these resumes is time-consuming, inefficient, and often leads to delayed hiring decisions.
 
-This system helps recruiters quickly filter thousands of resumes and identify suitable candidates efficiently.
+This project provides an AI-powered Resume Screening System that automatically analyzes uploaded resumes and predicts the most relevant technical job role using Natural Language Processing (NLP) and Machine Learning.
+
+The system enables recruiters to quickly filter large volumes of resumes and identify suitable candidates efficiently, significantly reducing manual screening effort.
+
+🎯 Problem Statement
+
+Traditional resume screening requires recruiters to manually read each resume, which creates several challenges:
+
+Extremely high time consumption when dealing with thousands of applications
+
+Difficulty in consistently matching candidate skills with job requirements
+
+Increased hiring delays
+
+Risk of missing qualified candidates due to manual oversight
+
+This system solves the above problems by automating resume classification, helping recruiters shortlist candidates faster and more accurately.
 
 🌐 Live Demo
 
-Deployed App:
+Deployed Application:
 https://resume-screening-nlp-1.onrender.com/
 
+🚀 Key Features
 
-🚀 Features
+Upload resume in PDF format
 
-Upload Resume in PDF format
+Automatic resume text extraction
 
-Automatic Resume Text Extraction
+NLP-based skill and content analysis
 
-NLP-based Resume Cleaning & Processing
+Automatic job role prediction
 
-Machine Learning based Job Role Prediction
+Prediction confidence visualization
 
-Top Prediction Confidence Visualization
+Helps recruiters quickly shortlist relevant candidates
 
-Fully deployed Streamlit Web Application
+🧠 How It Works
 
-🧠 Tech Stack
+User uploads a resume (PDF).
+
+Resume text is extracted using PDF processing libraries.
+
+Text is cleaned and processed using NLP preprocessing techniques.
+
+TF-IDF converts resume text into numerical vectors.
+
+A trained Machine Learning classification model predicts the most relevant job role.
+
+Prediction confidence scores are displayed for recruiter decision support.
+
+🛠 Tech Stack
 
 Python
 
-Machine Learning (Scikit-learn)
+Streamlit
 
-NLP (TF-IDF Vectorization)
+Scikit-learn
 
-Streamlit (Frontend + Deployment)
+Natural Language Processing (TF-IDF)
 
-Pandas / NumPy
-
-PDFPlumber (Resume parsing)
-
-📂 Project Structure
-resumeanalyzer/
-│
-├── app.py
-├── train_model.py
-├── requirements.txt
-├── .gitignore
-│
-├── data/
-│   └── candidate_job_role_dataset.csv
-│
-├── model/
-│   ├── tfidf.pkl
-│   ├── clf.pkl
-│   └── encoder.pkl
-│
-└── utils/
-    └── preprocess.py
-
-⚙️ Installation
-
-Clone the repository:
-
-git clone https://github.com/Anveshreddy2006/Resume-Screening-NLP.git
-cd Resume-Screening-NLP
-
-
-Install dependencies:
-
+▶ Run Locally
 pip install -r requirements.txt
-
-
-Train the model (if required):
-
-python train_model.py
-
-
-Run the application:
-
 streamlit run app.py
+☁ Deployment
 
-🌐 Deployment
-
-The application can be deployed using:
-
-Streamlit Cloud
+The application is deployed using Render.
+It can also be deployed using:
 
 Render
 
-Railway
 
-HuggingFace Spaces
+📈 Future Improvements
 
-📊 Example Output
+Resume-Job Description matching system
 
-Predicted Role: Web Developer
+Candidate ranking based on job requirement similarity
 
-Confidence Chart displaying Top Matching Roles
+Multi-resume batch screening for recruiters
 
-🎯 Use Case
-
-This project is designed for:
-
-Automated Resume Screening
-
-Recruiter Resume Filtering
-
-Job Role Classification
-
-HR Tech Automation Systems
-
-📌 Future Improvements
-
-Resume-Job Description Matching
-
-Skill Gap Analysis
-
-Multi-resume Batch Screening
-
-Recruiter Dashboard
+Advanced deep learning NLP models
 
 👤 Author
 
 Anvesh Reddy
-GitHub: https://github.com/Anveshreddy2006
-
-⭐ If you like this project
-
-Give it a ⭐ on GitHub — it helps a lot!
-
-Next (important)
