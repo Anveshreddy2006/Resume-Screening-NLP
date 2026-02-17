@@ -35,7 +35,7 @@ if uploaded_file:
                 text += t
 
     st.subheader("Extracted Resume Text (Preview)")
-    st.write(text[:1600])
+    st.write(text[:5000])
 
     if st.button("Analyze Resume"):
 
