@@ -4,6 +4,12 @@ An intelligent AI-powered Resume Screening System that automatically analyzes up
 
 This system helps recruiters quickly filter thousands of resumes and identify suitable candidates efficiently.
 
+🌐 Live Demo
+
+Deployed App:
+https://resume-screening-nlp-1.onrender.com/
+
+
 🚀 Features
 
 Upload Resume in PDF format
